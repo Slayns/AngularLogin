@@ -11,6 +11,10 @@ jobs:
       - name: Install npm dependencies
         run: |
           npm install
+        env:
+          CI: true
       - name: Launch test
         run: |
           npm test --browsers ChromeHeadless
+        env:
+          CI: true
