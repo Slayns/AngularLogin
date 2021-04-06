@@ -9,12 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install npm dependencies
-        run: |
+      - run: |
           npm install
-        env:
-          CI: true
       - name: Launch test
-        run: |
-          npm test --browsers ChromeHeadless
+      - run: npm test --browsers ChromeHeadless
         env:
-          CI: true
+            CI: true
