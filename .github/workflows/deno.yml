@@ -11,9 +11,9 @@ jobs:
       - name: Install npm dependencies
         run: |
           npm install
-      - name: Launch test
+      - name: Build project
         run: |
-          npm test --browsers ChromeHeadless
+          npm run-script build
         env:
             CI: true
         
