@@ -13,4 +13,4 @@ jobs:
           npm install
       - name: Launch test
         run: |
-          npm test
+          npm test --browsers ChromeHeadless
